@@ -1,0 +1,181 @@
+<!DOCTYPE HTML5>
+<!--Anthony Day-->
+<html lang="en">
+   
+    
+   
+<head>
+<!--THIS IS MY SCRIPT TYPES-->
+        <style type="text/css">
+    p {
+        color: black;
+        font-size: large;
+        font-weight: bold; 
+        font-family:'Times New Roman', Times, serif;
+    }
+    </style>
+    
+    <script type= "text/javascript">
+    
+        var countDown = 10;
+            document.getElementById("countdownlabel").innerHTML = countDown;
+       
+    function runCountdown ()
+    {
+        countDown --;
+        if(countDown != 0 )
+        {
+            document.getElementById("countdownlabel").innerHTML = countDown;
+        }
+        else
+        {
+        document.getElementById("blastoffLabel").innerHTML = "Blast Off";
+        }
+
+    }
+
+    window.alert("Welcome to my very first Webpage!");
+    
+       </script>
+
+<!--THIS IS MY TEXT AND IMAGE -->
+
+    <title>Document</title>
+   
+    </head>
+
+    <body>
+
+        <img src="https://synchronic.uat.edu/courses/5371/files/732213/preview?instfs=true" style="width:200px;height: 200px;">
+        
+        <h1>UAT Space Program</h1>
+       
+        <p><i>Test of the document write function.</i></p>
+       
+        <p><i>Test of the paragraph tags.</i></p>
+        
+        <p id="countdownlabel" ></p>
+
+        <p id="blastoffLabel" ></p>
+
+        <button id="b" onclick = "runCountdown()" >Start</button>
+        
+      
+
+    </body>
+
+</html>
+
+<!--This is the code for the Clock-->
+<html>
+
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+  $("#bt").click(function(){
+    $("#ct").toggle();
+  });
+});
+
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var strcount
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+tt=display_c();
+ }
+</script>
+
+</head>
+<body onload=display_ct();>
+
+<button id='bt'>Clock</button><br>
+<span id='ct' ></span>
+</body>
+</html>
+
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: White;
+}
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1> User Login </h1> </center> 
+    <form>
+        <div class="container"> 
+            <label>Username (First, Last name): </label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button> 
+            <input type="checkbox" checked="checked"> Remember me 
+         
+            <button type="button" class="cancelbtn"> Cancel</button> 
+         
+            Forgot <a href="#"> password? </a> 
+        <
+            /div> 
+    </for
+    m>   
+</body>  
+
+</html>
+
+<!-- this is my audio clip. I DO NOT OWN THE RIGHTS TO THIS SOUND CLIP!!!  -->
+
+<html>
+   <head>
+      <title>HTML background music</title>
+   </head>
+   <body>
+      <p>The music is running in the background.</p>
+      <p>(Song: East Bound and Down)</p>
+            <embed src="c:\Users\Dad\Desktop\Desktop Items\Jerry Reed - East Bound and Down (Audio) [TubeRipper.com].m4a" loop="true" autostart="true" width="2" height="0">
+   </body>
+</html> 
